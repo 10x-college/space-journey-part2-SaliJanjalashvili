@@ -136,6 +136,46 @@
         </table>
       </div>
     </section>
+
+    <section id="booking">
+      <div class="kiosk-interface">
+        <h2>SELF-SERVICE TERMINAL</h2>
+        <form action="#" method="POST">
+          <fieldset>
+            <legend>IDENTITY VERIFICATION</legend>
+
+            <label for="full-designation">Full Designation</label>
+            <input type="text" id="full-designation" name="full_designation" placeholder="Enter Designation" required>
+
+            <label for="id-code">ID Code</label>
+            <input type="text" id="id-code" name="id_code" placeholder="Enter ID" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>FLIGHT PARAMETERS</legend>
+
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" name="destination" list="planets" placeholder="Select Destination"
+              required>
+            <datalist id="planets">
+              <option value="Mars">
+              <option value="Venus">
+              <option value="Jupiter">
+              <option value="Saturn">
+            </datalist>
+
+            <label for="cabin">Cabin Class</label>
+            <select id="cabin" name="cabin" required>
+              <option value="economy">Economy (Stasis Pod)</option>
+              <option value="business">Business (Quarters)</option>
+              <option value="first">First (Zero-G Suite)</option>
+            </select>
+
+            <button type="submit">AUTHORIZE CREDIT TRANSFER</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
   </main>
 </body>
 
